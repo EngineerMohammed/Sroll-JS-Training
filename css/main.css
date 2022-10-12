@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: system-ui;
+  background: linear-gradient(#200016, #10001f);
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+header {
+  position: absolute;
+  width: 95%;
+  margin: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 5;
+}
+header .logo {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+header ul {
+  display: flex;
+}
+
+#moon {
+  mix-blend-mode: screen;
+}
+
+header ul li {
+  margin-right: 20px;
+}
+header ul li a {
+  padding: 6px 15px;
+  border-radius: 20px;
+}
+header ul li a:hover,
+.active {
+  background-color: #fff;
+  color: #200016;
+}
+
+.main {
+  position: relative;
+  justify-content: center;
+  display: flex;
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+}
+.main::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  bottom: 0;
+  background: linear-gradient(to top, #200016, transparent);
+}
+.main img {
+  position: absolute;
+  width: 100%;
+  object-fit: cover;
+}
+
+.nouvil {
+  font-size: 25px;
+  color: #fff;
+  text-transform: uppercase;
+  transform: translateY(140px);
+}
+.content {
+  margin: 30px;
+  color: #fff;
+}
+.content p {
+  margin: 20px;
+  font-size: 14px;
+}
+.content h2 {
+  margin: 20px;
+  font-size: 25px;
+}
